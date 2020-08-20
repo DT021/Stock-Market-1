@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Baskervville|Vibes&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{
+            background-color: #242a33; 
+        }
+        .input-box{
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fafafa;
+            width: 100%;
+            border: 1px solid #999;
+            outline: none;
+        }
+        .sign-up-form{
+            height: 600px;
+            width: 350px;
+            border: 1px solid #999;
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 30px;
+            margin-left: 190px;
+            text-align: center;
+        }
+        .sign-up-form h1{
+            color:#082d6b;
+            margin-bottom:30px;
+            font-family:'Vibes', cursive;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .signup-button{
+            color: #ffffff;
+            background-color: #082d6b;
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            margin: 10px 0;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        #output{
+            font-family: 'Cabin Sketch', cursive;
+            color: #ffffff;
+            font-size: 160px;
+            text-align: center;
+            padding: 0;
+        }
+        #output p{
+            padding: 0;
+            margin: -30px;
+            height: 180px;
+        }
+        #logo{
+            height: 200px;
+            width: 200px;
+            padding: 0;
+            margin-bottom: -50px;
+        }
+        .member{
+            color: #082d6b;
+            font-family: 'Baskervville';
+            font-size: 20px;
+        }
+        #main{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div  class="container" id="main">
+    <div class="row">
+        <div class="col-lg-6" id="output">
+            <center><img src="chart.png" id="logo"></center>
+            <p>Stock</p>
+            <p>Market</p>
+        </div>
+        <div class="col-lg-6">
+            <form class="sign-up-form" method="POST" action="signup.php">
+                        <h1>Sign Up</h1>                
+                        <input type="first-name" class="input-box" placeholder="Firstname" name="firstname" required>
+                        <br>
+                        <input type="last-name" class="input-box" placeholder="Lastname" name="lastname" required>
+                        <br>
+                        <input type="email" class="input-box" placeholder="Your e-mail" name="email" required>
+                        <br>
+                        <input type="password" class="input-box" placeholder="Enter password" name="password" required minlength="6">
+                        <p><span><input type="checkbox" name="checkbox" required></span> I agree to terms and conditions</p>
+                        <button type="submit" class="signup-button">Signup</button>
+                        <hr>
+                        <p class="member">Already a Member? <a href="signin.html" class="login">Sign In</a> </p>
+                    </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
