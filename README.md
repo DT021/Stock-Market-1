@@ -1,2 +1,1 @@
-# Stock-Market
-Stock Market website creation
+This is a stock market website that perform listing of stocks, buying and selling them. The action of buying and selling are mimicked as they happen in the real-world scenario. The user must create an account  and then signin to access the dashboard. He has the options of viewing selling and buying the stocks. The user should have money to his wallet in order to purchase stocks and when they sell them the money will be credited back into his wallet. The user has access to transaction tab, analytics tab, watchlist tab and the user dashboard.
